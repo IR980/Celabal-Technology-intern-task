@@ -1,26 +1,29 @@
+Step-by-step Explanation:
+
 n = 5: Sets the number of rows to 5.
 
-for i in range(1, n + 1): Loops from 1 to 5 (inclusive).
+for i in range(n, 0, -1): Loops from 5 down to 1 (inclusive), decreasing by 1 each time.
 
-print('*' * i): In each iteration, prints i asterisks (*).
+print('*' * i): In each iteration, prints i asterisks.
 
-1st row: 1 star
+1st row: 5 stars
 
-2nd row: 2 stars
+2nd row: 4 stars
 ...
-5th row: 5 stars
-
+5th row: 1 star
 
 
 this is my code is here
 
 n = 5  # Number of rows
-for i in range(1, n + 1):
+
+for i in range(n, 0, -1):
     print('*' * i)
 
+
 the output is:-
- * 
- *  *
- *  *  *
- *  *  *  *
- *  *  *  *  *
+* * * * *
+  * * * *
+    * * *
+      * *
+        *
