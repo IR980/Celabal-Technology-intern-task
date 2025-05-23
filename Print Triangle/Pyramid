@@ -1,0 +1,39 @@
+Step-by-step Explanation:
+
+n = 5: Sets the number of rows in the pyramid.
+
+for i in range(1, n + 1): Loops from 1 to 5 (inclusive).
+
+spaces = ' ' * (n - i): Calculates the number of spaces needed on each side to center the stars.
+
+For row 1: 4 spaces
+For row 2: 3 spaces
+...
+For row 5: 0 spaces
+
+stars = '*' * (2 * i - 1): Calculates the number of stars for the current row.
+
+For row 1: 1 star
+
+For row 2: 3 stars
+
+For row 3: 5 stars
+...
+For row 5: 9 stars
+
+print(spaces + stars + spaces): Prints the spaces, then the stars, then spaces again to keep the pyramid centered.
+
+this is code in python is here:-
+
+n = 5  # Number of rows
+for i in range(1, n + 1):
+    spaces = ' ' * (n - i)
+    stars = '*' * (2 * i - 1)
+    print(spaces + stars + spaces)
+
+My Output is here      //The Time Complexity is Big O(n2)
+    *    
+   ***
+  *****
+ *******
+*********
